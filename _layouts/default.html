@@ -4,10 +4,24 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <h1>Hello World!</h1>
+    <header class="header">
+      <div class="header__titleContainer">
+        <h1 class="header__title">Stephen Allard</h1>
+        <p class="header__description">fullstack developer</p>
+      </div>
+      <ul class="header__nav">
+        <li><a href="./index.html" class="header__link">Projects</a></li>
+        <li><a href="./about.html" class="header__link">About</a></li>
+        <li><a href="./contact.html" class="header__link">Contacts</a></li>
+      </ul>
+    </header>
     {{ content }}
   </body>
 </html>
