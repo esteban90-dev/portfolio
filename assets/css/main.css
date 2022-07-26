@@ -39,6 +39,10 @@ a:hover {
   position: relative;
 }
 
+.header__titleContainer a {
+  text-decoration: none;
+}
+
 .header__title {
   letter-spacing: -0.08em;
 }
@@ -56,7 +60,7 @@ a:hover {
   padding: 0;
 }
 
-.header__link {
+.header__nav a {
   margin-left: 21px;
 }
 
