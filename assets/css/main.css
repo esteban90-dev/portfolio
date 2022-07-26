@@ -13,7 +13,6 @@ body {
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
-  background-color: rgb(255, 255, 255);
 }
 
 a {
@@ -94,15 +93,9 @@ a:hover {
 }
 
 .card {
-    margin-bottom: 50px;
-    background-color:rgb(228, 228, 228);
-    padding: 30px;
-  }
-
-.card__imageContainer {
-  position: relative;
-  width: 100%;
-  height: 300px;
+  margin-bottom: 50px;
+  background-color:rgb(237, 237, 237);
+  padding: 20px;
 }
 
 .card__skillContainer {
@@ -126,10 +119,8 @@ a:hover {
 }
 
 .card__image {
-  position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .card__skill {
@@ -160,12 +151,6 @@ a:hover {
   height: auto;
   float: right;
   margin: 0 0 20px 20px;
-}
-
-@media screen and (max-width: 400px) {
-  .card__imageContainer {
-    height: 200px;
-  }
 }
 
 @media screen and (max-width: 650px) {
@@ -207,7 +192,4 @@ a:hover {
   .card {
     width: 48%;
   }
-}
-
-@media screen and (min-width: 1001px) {
 }
