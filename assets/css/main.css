@@ -16,6 +16,16 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333333;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -49,13 +59,6 @@ body {
 
 .header__link {
   margin-left: 21px;
-  text-decoration: none;
-  font-weight: bold;
-  color: #333333;
-}
-
-.header__link:hover{
-  text-decoration: underline;
 }
 
 .page__title {
@@ -69,7 +72,20 @@ body {
   flex-wrap: wrap;
 }
 
-.about__container {
+.contact__container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__container p {
+  margin: 0;
+}
+
+.contact__divider {
+  margin: 0 20px 0 20px;
+}
+
+.about__container, .contact__container{
   margin-bottom: 80px;
 }
 
@@ -135,6 +151,10 @@ body {
   height: 36px;
 }
 
+.card__button:hover {
+  text-decoration: none;
+}
+
 .portrait {
   width: 60%;
   height: auto;
@@ -166,6 +186,20 @@ body {
     height: auto;
     float: none;
     margin: 0 0 0 0;
+  }
+
+  .contact__container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact__container p, .contact__container a {
+    margin: 10px 0;
+  }
+
+  .contact__divider {
+    display: none;
   }
 }
 
